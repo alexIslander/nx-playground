@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  nxplayground:
+    image: nxp-image
+    container_name: nxp-container
+    build: 
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - "4203:80"
+    restart: always

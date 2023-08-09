@@ -6,7 +6,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "e2e": "nx e2e e2e"
+    "e2e": "nx e2e e2e",
+    "build-docker": "nx container nx-playground"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,8 @@
     "@angular/cli": "~16.1.0",
     "@angular/compiler-cli": "~16.1.0",
     "@angular/language-service": "~16.1.0",
+    "@nx-tools/container-metadata": "^5.0.2",
+    "@nx-tools/nx-container": "^5.0.2",
     "@nx/cypress": "16.6.0",
     "@nx/eslint-plugin": "16.6.0",
     "@nx/jest": "16.6.0",
